@@ -1,11 +1,31 @@
-*{margin: 0;padding: 0;box-sizing: border-box;}
-body{background: rgba(253,219,33,1);}
+/*
+ *  今天我们用 CSS 来画一只可爱的海绵宝宝吧
+ */
+
+/* 首先，画板调成橙黄色 */
+
+body{
+    background: rgba(253,219,33,1);
+}
+
+/* 然后，准备一张白纸 */
+
+.code{
+    opacity: 0.4;
+    background: black;
+}
+
+/* 先画头部 */
+
 .head{
     position: relative;
     width: 300px;
     height: 240px;
     margin: 100px auto 0;
 }
+
+/* 脸部的斑点 */
+
 .pores{
     overflow: hidden;
     position: absolute;
@@ -61,6 +81,9 @@ body{background: rgba(253,219,33,1);}
     width: 20px;
     height: 20px;
 }
+
+/* 画眼睛 */
+
 .upper-face{
     position: relative;
     height: 100px;
@@ -122,6 +145,9 @@ body{background: rgba(253,219,33,1);}
     border-radius: 50%;
     background: black;
 }
+
+/* 画睫毛 */
+
 .eyebrow{
     position: absolute;
     bottom: 100%;
@@ -152,6 +178,8 @@ body{background: rgba(253,219,33,1);}
     background: black;
     transform: rotate(35deg);
 }
+
+/* 画脸颊 */
 
 .middle-face{
     position: relative;
@@ -231,6 +259,9 @@ body{background: rgba(253,219,33,1);}
 .middle-face .freckle::after{
     left: calc(50% + 8px);
 }
+
+/* 画鼻子 */
+
 .middle-face .nose{
     position: absolute;
     top: -20px;
@@ -253,6 +284,8 @@ body{background: rgba(253,219,33,1);}
     background: rgba(253,219,33,1);
 }
 
+/* 画嘴唇 */
+
 .upper-lip{
     overflow: hidden;
     position: absolute;
@@ -270,6 +303,9 @@ body{background: rgba(253,219,33,1);}
     border: 3px solid black;
     border-radius: 50%
 }
+
+/* 画牙齿 */
+
 .teeth{
     position: absolute;
     left: calc(50% - 25px);
@@ -296,6 +332,9 @@ body{background: rgba(253,219,33,1);}
     right: calc(50% - 30px);
     transform: rotate(-5deg);
 }
+
+/* 下嘴唇 */
+
 .lower-lip{
     overflow: hidden;
     position: absolute;
@@ -326,6 +365,9 @@ body{background: rgba(253,219,33,1);}
     border: 3px solid rgb(215,60,18);
     border-radius: 50%;
 }
+
+/* 画驱干 */
+
 .body{
     position: relative;
     width: 300px;
@@ -353,6 +395,9 @@ body{background: rgba(253,219,33,1);}
     height: 25px;
     border-top: 10px dashed black;
 }
+
+/* 画领带 */
+
 .body .upper-body{
     position: absolute;
     top: 0;
@@ -402,6 +447,9 @@ body{background: rgba(253,219,33,1);}
     border: 20px solid transparent;
     border-top: 36px solid red;
 }
+
+/* 画领口 */
+
 .body .left-collar{
     position: absolute;
     left: calc(50% - 100px);
@@ -444,6 +492,13 @@ body{background: rgba(253,219,33,1);}
     border-left: 26px solid transparent;
     border-right: 35px solid transparent;
 }
+
+/*
+ * 画完啦！
+ * 怎么样？
+ * 这只可爱的海绵宝宝有没有让你嘴角上扬呢？
+ */
+
 .music {
     position: absolute;
     bottom: 10px;
