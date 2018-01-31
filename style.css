@@ -444,6 +444,16 @@ body{background: rgba(253,219,33,1);}
     border-left: 26px solid transparent;
     border-right: 35px solid transparent;
 }
-iframe{
-    display: none;
+.music {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+}
+.play{
+    background: url("./play.png");
+}
+.pause{
+    background: url("./pause.png");
 }
