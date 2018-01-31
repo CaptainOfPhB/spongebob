@@ -96,7 +96,6 @@ body{
     background: white;
     border-radius: 50%;
     border: 3px solid black;
-    animation: blink forwards infinite 6s ease-in-out;
 }
 .left-eye{right: 50%;}
 .left-eye::before{
@@ -506,10 +505,14 @@ body{
         transform: scaleX(1.5) scaleY(0.1);
     }
 }
+.upper-face > *{
+    animation: blink forwards infinite 6s ease-in-out;
+}
 
 /*
  * 画完啦！
  * 怎么样？
  * 这只可爱的海绵宝宝有没有让你嘴角上扬呢？
+ *
  */`;
 }();
