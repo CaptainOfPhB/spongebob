@@ -1,0 +1,10 @@
+@keyframes blink {
+    0%, 2%, 60%, 62%, 100% {
+        -webkit-transform: scaleX(1) scaleY(1);
+        transform: scaleX(1) scaleY(1);
+    }
+    1%, 61% {
+        -webkit-transform: scaleX(1.5) scaleY(0.1);
+        transform: scaleX(1.5) scaleY(0.1);
+    }
+}
