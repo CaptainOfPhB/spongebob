@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#paper{
+    overflow: hidden;
+    height: 100%;
+}
+#code{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    width: 100%;
+    height: 100vh;
+    color: #aaa;
+    z-index: 10;
+}
+.hide {
+    display: none;
+}
+.music {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    z-index: 11;
+}
+.play{
+    background: url("./pause.png");
+}
+.pause{
+    background: url("./play.png");
+}
