@@ -452,8 +452,8 @@ body{background: rgba(253,219,33,1);}
     height: 32px;
 }
 .play{
-    background: url("./play.png");
+    background: url("./pause.png");
 }
 .pause{
-    background: url("./pause.png");
+    background: url("./play.png");
 }
