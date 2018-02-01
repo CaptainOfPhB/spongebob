@@ -3,19 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul{
+    position: absolute;
+    bottom: 0;
+    padding: 8px;
+}
+li{
+    font-size: 12px;
+    color: black;
+}
 #paper{
     overflow: hidden;
     height: 100%;
 }
-#code{
+#container{
     position: absolute;
     top: 0;
     left: 0;
     padding: 15px;
     width: 100%;
     height: 100vh;
-    color: #eee;
+    color: #fff;
     z-index: 10;
+}
+.transparent{
+    opacity: 1;
 }
 .hide {
     display: none;
