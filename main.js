@@ -22,7 +22,7 @@
     let n = 1;
     let timer;
     timer = setTimeout(function WriteCode() {
-        paper.innerHTML = code.substring(0, n);
+        paper.innerHTML = Prism.highlight(code.substring(0, n), Prism.languages.javascript);
         style.innerHTML = code.substring(0, n);
         paper.scrollTop = paper.scrollHeight;
         n += 1;
