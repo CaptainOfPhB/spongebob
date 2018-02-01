@@ -1,9 +1,17 @@
 !function () {
     window.code = `/*
- *  今天我们用 CSS 来画一只可爱的海绵宝宝吧
+ *  面试官，你好呀！
+ *  
+ *  我叫 「 戴江涛 」，自学前端半年。
+ * 
+ *  很高兴您能够腾出宝贵的时间来看我的作品！
+ *  
+ *  好啦，我们开始吧！
+ *
+ *  今天我们用 CSS 来画一只可爱的海绵宝宝!
  */
 
-/* 首先，画板调成橙黄色 */
+/* 首先，先将画板调成橙黄色 */
 
 body{
     background: rgba(253,219,33,1);
@@ -11,12 +19,14 @@ body{
 
 /* 然后，准备一张白纸 */
 
-#code{
+#container{
     opacity: 0.4;
+}
+.black{
     background: black;
 }
 
-/* 先画头部 */
+/* 先画海绵宝宝的头部 */
 
 .head{
     position: relative;
@@ -25,7 +35,7 @@ body{
     margin: 100px auto 0;
 }
 
-/* 脸部的斑点 */
+/* 再画脸部的斑点 */
 
 .pores{
     overflow: hidden;
@@ -83,7 +93,7 @@ body{
     height: 20px;
 }
 
-/* 画眼睛 */
+/* 画海绵宝宝的眼睛 */
 
 .upper-face{
     position: relative;
@@ -146,7 +156,7 @@ body{
     background: black;
 }
 
-/* 画睫毛 */
+/* 画海绵宝宝的睫毛 */
 
 .eyebrow{
     position: absolute;
@@ -179,7 +189,7 @@ body{
     transform: rotate(35deg);
 }
 
-/* 画脸颊 */
+/* 画海绵宝宝的脸颊 */
 
 .middle-face{
     position: relative;
@@ -206,7 +216,8 @@ body{
     border-radius: 50%;
     background: rgba(253,219,33,1);
 }
-.middle-face .left-cheek::before,.middle-face .right-cheek::before{
+.middle-face .left-cheek::before,
+.middle-face .right-cheek::before{
     position: absolute;
     display: block;
     content: '';
@@ -217,7 +228,8 @@ body{
     border-radius: 50%;
     background: rgba(253,219,33,1);
 }
-.middle-face .left-cheek::after,.middle-face .right-cheek::after{
+.middle-face .left-cheek::after,
+.middle-face .right-cheek::after{
     position: absolute;
     content: '';
     width: 10px;
@@ -243,7 +255,8 @@ body{
     border-radius: 50%;
     background: rgb(215,60,18);
 }
-.middle-face .freckle::before,.middle-face .freckle::after{
+.middle-face .freckle::before,
+.middle-face .freckle::after{
     display: block;
     content: '';
     position: absolute;
@@ -260,7 +273,7 @@ body{
     left: calc(50% + 8px);
 }
 
-/* 画鼻子 */
+/* 画海绵宝宝的鼻子 */
 
 .middle-face .nose{
     position: absolute;
@@ -284,7 +297,7 @@ body{
     background: rgba(253,219,33,1);
 }
 
-/* 画嘴唇 */
+/* 画海绵宝宝的嘴唇 */
 
 .upper-lip{
     overflow: hidden;
@@ -304,7 +317,7 @@ body{
     border-radius: 50%
 }
 
-/* 画牙齿 */
+/* 画海绵宝宝的牙齿 */
 
 .teeth{
     position: absolute;
@@ -333,7 +346,7 @@ body{
     transform: rotate(-5deg);
 }
 
-/* 下嘴唇 */
+/* 画篁明白吧的下嘴唇 */
 
 .lower-lip{
     overflow: hidden;
@@ -366,7 +379,7 @@ body{
     border-radius: 50%;
 }
 
-/* 画驱干 */
+/* 画海绵宝宝的身体 */
 
 .body{
     position: relative;
@@ -396,7 +409,7 @@ body{
     border-top: 10px dashed black;
 }
 
-/* 画领带 */
+/* 画海绵宝宝的领带 */
 
 .body .upper-body{
     position: absolute;
@@ -448,7 +461,7 @@ body{
     border-top: 36px solid red;
 }
 
-/* 画领口 */
+/* 画海绵宝宝的领口 */
 
 .body .left-collar{
     position: absolute;
@@ -493,7 +506,9 @@ body{
     border-right: 35px solid transparent;
 }
 
-/* 最后，让我们的海绵宝宝动起来！ */
+/* 
+ *  最后，让我们的海绵宝宝动起来！
+ */
 
 @keyframes blink {
     0%, 2%, 60%, 62%, 100% {
@@ -505,14 +520,21 @@ body{
         transform: scaleX(1.5) scaleY(0.1);
     }
 }
+
+/*
+ *  眨眨眼睛！
+ */
+
 .upper-face > *{
     animation: blink forwards infinite 6s ease-in-out;
 }
 
 /*
- * 画完啦！
- * 怎么样？
- * 这只可爱的海绵宝宝有没有让你嘴角上扬呢？
+ *  画完啦！
  *
- */`;
+ *  怎么样？
+ *
+ *  这只可爱的海绵宝宝有没有让你嘴角上扬呢？
+ */
+ `;
 }();
