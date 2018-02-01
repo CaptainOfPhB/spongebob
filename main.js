@@ -29,10 +29,12 @@
         if (n < code.length) {
             timer = setTimeout(WriteCode, 10);
         } else {
-            setTimeout(container.classList.add('hide'),3000);
-            if (confirm('要不要去我的 GitHub 看一看呀？')) {
-                window.location.href = 'https://github.com/CaptainInPHW/spongebob';
-            }
+            setTimeout(function () {
+                if (confirm('要不要去我的 GitHub 看一看呀？')) {
+                    window.location.href = 'https://github.com/CaptainInPHW/spongebob';
+                }
+                container.classList.add('hide');
+            },3000)
         }
     }, 10)
 }();
