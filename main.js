@@ -16,7 +16,8 @@
     })
 }();
 !function () {
-    let container = document.querySelector('#code');
+    let info = document.querySelector('#info');
+    let container = document.querySelector('#container');
     let paper = document.querySelector('#paper');
     let style = document.querySelector('#style');
     let n = 1;
@@ -27,14 +28,17 @@
         paper.scrollTop = paper.scrollHeight;
         n += 1;
         if (n < code.length) {
-            timer = setTimeout(WriteCode, 10);
+            timer = setTimeout(WriteCode, 0);
         } else {
             setTimeout(function () {
                 if (confirm('要不要去我的 GitHub 看一看呀？')) {
                     window.location.href = 'https://github.com/CaptainInPHW/spongebob';
                 }
-                container.classList.add('hide');
+                container.classList.remove('black');
+                container.classList.add('transparent');
+                paper.classList.add('hide');
+                info.classList.remove('hide');
             },3000)
         }
-    }, 10)
+    }, 0)
 }();
