@@ -28,7 +28,7 @@
         paper.scrollTop = paper.scrollHeight;
         n += 1;
         if (n < code.length) {
-            timer = setTimeout(WriteCode, 0);
+            timer = setTimeout(WriteCode, 10);
         } else {
             setTimeout(function () {
                 if (confirm('要不要去我的 GitHub 看一看呀？')) {
@@ -40,5 +40,5 @@
                 info.classList.remove('hide');
             },3000)
         }
-    }, 0)
+    }, 10)
 }();
