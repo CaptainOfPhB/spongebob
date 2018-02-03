@@ -346,7 +346,7 @@ body{
     transform: rotate(-5deg);
 }
 
-/* 画篁明白吧的下嘴唇 */
+/* 画海绵宝宝的下嘴唇 */
 
 .lower-lip{
     overflow: hidden;
