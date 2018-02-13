@@ -9,8 +9,9 @@ ul{
     padding: 8px;
 }
 li{
-    font-size: 12px;
+    font-size: 14px;
     color: black;
+    font-weight: bold;
 }
 #paper{
     overflow: hidden;
