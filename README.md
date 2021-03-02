@@ -1,2 +1,5 @@
-### 海绵宝宝
-画个海绵宝宝给你看！唱首《海绵宝宝》给你听！
+# Spongebob
+
+I'll show you how to draw a cute SpongeBob. 😜
+
+![SpongeBob](SpongeBob.png)

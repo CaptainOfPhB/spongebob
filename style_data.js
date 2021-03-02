@@ -1,34 +1,29 @@
 !function () {
     window.code = `/*
- *  面试官，你好呀！
- *  
- *  我叫 「 戴江涛 」，自学前端半年。
- * 
- *  很高兴您能够腾出宝贵的时间来看我的作品！
- *  
- *  好啦，我们开始吧！
  *
- *  今天我们用 CSS 来画一只可爱的海绵宝宝!
+ *  今天我们来画一只可爱的海绵宝宝!
+ *
  */
 
 /* 首先，先将画板调成橙黄色 */
 
-body{
+body  {
     background: rgba(253,219,33,1);
 }
 
 /* 然后，准备一张白纸 */
 
-#container{
-    opacity: 0.4;
+#container {
+    opacity: 0.5;
 }
-.black{
+
+.black  {
     background: black;
 }
 
 /* 先画海绵宝宝的头部 */
 
-.head{
+.head {
     position: relative;
     width: 300px;
     height: 240px;
@@ -37,7 +32,7 @@ body{
 
 /* 再画脸部的斑点 */
 
-.pores{
+.pores {
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -45,48 +40,56 @@ body{
     width: 300px;
     height: 240px;
 }
-.pores > *{
+
+.pores > * {
     position: absolute;
     border-radius: 50%;
     background: rgb(174,172,12);
 }
-.pore-1{
+
+.pore-1 {
     left: 0;
     top: 0;
     width: 40px;
     height: 40px;
 }
-.pore-2{
+
+.pore-2 {
     top: 60px;
     left: 10px;
     width: 20px;
     height: 20px;
 }
-.pore-3{
+
+.pore-3 {
     bottom: 60px;
     left: 10px;
     width: 15px;
     height: 15px;
 }
-.pore-4{
+
+.pore-4 {
     bottom: 10px;
     left: 10px;
     width: 40px;
     height: 40px;
 }
-.pore-5{
+
+.pore-5 {
     top: 20px;
     right: 10px;
     width: 15px;
     height: 15px;
 }
-.pore-6{
+
+.pore-6 {
     bottom: 30px;
     right: 30px;
     width: 40px;
     height: 40px;
 }
-.pore-7{
+
+.pore-7 {
     bottom: 10px;
     right: 20px;
     width: 20px;
@@ -95,11 +98,12 @@ body{
 
 /* 画海绵宝宝的眼睛 */
 
-.upper-face{
+.upper-face {
     position: relative;
     height: 100px;
 }
-.upper-face > *{
+
+.upper-face > * {
     position: absolute;
     height: 100%;
     width: 100px;
@@ -107,8 +111,12 @@ body{
     border-radius: 50%;
     border: 3px solid black;
 }
-.left-eye{right: 50%;}
-.left-eye::before{
+
+.left-eye {
+    right: 50%;
+}
+
+.left-eye::before {
     position: absolute;
     display: block;
     content: '';
@@ -120,7 +128,8 @@ body{
     border: 3px solid black;
     background: #0099ff;
 }
-.left-eye::after{
+
+.left-eye::after {
     position: absolute;
     display: block;
     content: '';
@@ -131,8 +140,12 @@ body{
     border-radius: 50%;
     background: black;
 }
-.right-eye{left: 50%;}
-.right-eye::before{
+
+.right-eye {
+    left: 50%;
+}
+
+.right-eye::before {
     position: absolute;
     display: block;
     content: '';
@@ -144,7 +157,8 @@ body{
     border: 3px solid black;
     background: #0099ff;
 }
-.right-eye::after{
+
+.right-eye::after {
     position: absolute;
     display: block;
     content: '';
@@ -158,7 +172,7 @@ body{
 
 /* 画海绵宝宝的睫毛 */
 
-.eyebrow{
+.eyebrow {
     position: absolute;
     bottom: 100%;
     left: calc(50% - 4px);
@@ -166,7 +180,8 @@ body{
     height: 25px;
     background: black;
 }
-.eyebrow::before{
+
+.eyebrow::before {
     position: absolute;
     display: block;
     content: '';
@@ -177,7 +192,8 @@ body{
     background: black;
     transform: rotate(-35deg);
 }
-.eyebrow::after{
+
+.eyebrow::after {
     position: absolute;
     display: block;
     content: '';
@@ -191,13 +207,14 @@ body{
 
 /* 画海绵宝宝的脸颊 */
 
-.middle-face{
+.middle-face {
     position: relative;
     width: 210px;
     height: 10px;
     margin: -20px auto;
 }
-.middle-face .left-cheek{
+
+.middle-face .left-cheek {
     position: absolute;
     top: -10px;
     width: 45px;
@@ -206,7 +223,8 @@ body{
     border-radius: 50%;
     background: rgba(253,219,33,1);
 }
-.middle-face .right-cheek{
+
+.middle-face .right-cheek {
     position: absolute;
     top: -10px;
     right: 0;
@@ -216,8 +234,9 @@ body{
     border-radius: 50%;
     background: rgba(253,219,33,1);
 }
+
 .middle-face .left-cheek::before,
-.middle-face .right-cheek::before{
+.middle-face .right-cheek::before {
     position: absolute;
     display: block;
     content: '';
@@ -228,8 +247,9 @@ body{
     border-radius: 50%;
     background: rgba(253,219,33,1);
 }
+
 .middle-face .left-cheek::after,
-.middle-face .right-cheek::after{
+.middle-face .right-cheek::after {
     position: absolute;
     content: '';
     width: 10px;
@@ -238,15 +258,18 @@ body{
     border: 3px solid transparent;
     border-bottom: 3px solid black;
 }
-.middle-face .left-cheek::after{
+
+.middle-face .left-cheek::after {
     left: calc(50% - 10px);
     transform: rotate(-60deg);
 }
-.middle-face .right-cheek::after{
+
+.middle-face .right-cheek::after {
     left: calc(50% - 4px);
     transform: rotate(60deg);
 }
-.middle-face .freckle{
+
+.middle-face .freckle {
     position: absolute;
     top: 5px;
     left: calc(50% - 3px);
@@ -255,8 +278,9 @@ body{
     border-radius: 50%;
     background: rgb(215,60,18);
 }
+
 .middle-face .freckle::before,
-.middle-face .freckle::after{
+.middle-face .freckle::after {
     display: block;
     content: '';
     position: absolute;
@@ -266,16 +290,18 @@ body{
     border-radius: 50%;
     background: rgb(215,60,18);
 }
-.middle-face .freckle::before{
+
+.middle-face .freckle::before {
     left: calc(50% - 15px);
 }
-.middle-face .freckle::after{
+
+.middle-face .freckle::after {
     left: calc(50% + 8px);
 }
 
 /* 画海绵宝宝的鼻子 */
 
-.middle-face .nose{
+.middle-face .nose {
     position: absolute;
     top: -20px;
     left: calc(50% - 20px);
@@ -285,7 +311,8 @@ body{
     border-radius: 50%;
     background: rgba(253,219,33,1);
 }
-.middle-face .nose::before{
+
+.middle-face .nose::before {
     position: absolute;
     display: block;
     content: '';
@@ -299,7 +326,7 @@ body{
 
 /* 画海绵宝宝的嘴唇 */
 
-.upper-lip{
+.upper-lip {
     overflow: hidden;
     position: absolute;
     left: calc(50% - 84px);
@@ -307,7 +334,8 @@ body{
     width: 170px;
     height: 35px;
 }
-.upper-lip .lip{
+
+.upper-lip .lip {
     position: absolute;
     bottom: calc(50% - 15px);
     left: calc(50% - 165px);
@@ -319,14 +347,16 @@ body{
 
 /* 画海绵宝宝的牙齿 */
 
-.teeth{
+.teeth {
     position: absolute;
     left: calc(50% - 25px);
     margin: 47px 0;
     width: 50px;
     height: 17px;
 }
-.teeth::before,.teeth::after{
+
+.teeth::before,
+.teeth::after {
     display: block;
     content: '';
     position: absolute;
@@ -337,18 +367,20 @@ body{
     border-radius: 3px;
     background: white;
 }
-.teeth::before{
+
+.teeth::before {
     left: calc(50% - 30px);
     transform: rotate(5deg);
 }
-.teeth::after{
+
+.teeth::after {
     right: calc(50% - 30px);
     transform: rotate(-5deg);
 }
 
 /* 画海绵宝宝的下嘴唇 */
 
-.lower-lip{
+.lower-lip {
     overflow: hidden;
     position: absolute;
     left: calc(50% - 50px);
@@ -356,7 +388,8 @@ body{
     width: 100px;
     height: 20px;
 }
-.lower-lip::before{
+
+.lower-lip::before {
     display: block;
     content: '';
     position: absolute;
@@ -367,7 +400,8 @@ body{
     border: 3px solid rgb(215,60,18);
     border-radius: 50%;
 }
-.lower-lip::after{
+
+.lower-lip::after {
     display: block;
     content: '';
     position: absolute;
@@ -381,7 +415,7 @@ body{
 
 /* 画海绵宝宝的身体 */
 
-.body{
+.body {
     position: relative;
     width: 300px;
     height: 120px;
@@ -389,7 +423,8 @@ body{
     border: 3px solid black;
     background: white;
 }
-.body::before{
+
+.body::before {
     display: block;
     content: '';
     position: absolute;
@@ -399,7 +434,8 @@ body{
     border-top: 3px solid black;
     background: rgb(187,120,49);
 }
-.body::after{
+
+.body::after {
     display: block;
     content: '';
     position: absolute;
@@ -411,14 +447,15 @@ body{
 
 /* 画海绵宝宝的领带 */
 
-.body .upper-body{
+.body .upper-body {
     position: absolute;
     top: 0;
     left: 0;
     width: 300px;
     height: 60px;
 }
-.body .upper-tie{
+
+.body .upper-tie {
     position: absolute;
     top: 0;
     left: calc(50% - 25px);
@@ -428,7 +465,8 @@ body{
     border-top: 18px solid black;
     border-bottom: 24px solid black;
 }
-.body .upper-tie::after{
+
+.body .upper-tie::after {
     display: block;
     content: '';
     position: absolute;
@@ -440,7 +478,8 @@ body{
     border-top: 15px solid red;
     border-bottom: 22px solid red;
 }
-.body .lower-tie{
+
+.body .lower-tie {
     position: absolute;
     top: 42px;
     left: calc(50% - 25px);
@@ -449,7 +488,8 @@ body{
     border: 25px solid transparent;
     border-top: 40px solid black;
 }
-.body .lower-tie::after{
+
+.body .lower-tie::after {
     display: block;
     content: '';
     position: absolute;
@@ -463,7 +503,7 @@ body{
 
 /* 画海绵宝宝的领口 */
 
-.body .left-collar{
+.body .left-collar {
     position: absolute;
     left: calc(50% - 100px);
     width: 0;
@@ -472,7 +512,8 @@ body{
     border-left: 40px solid transparent;
     border-right: 30px solid transparent;
 }
-.body .left-collar::after{
+
+.body .left-collar::after {
     display: block;
     content: '';
     position: absolute;
@@ -484,7 +525,8 @@ body{
     border-left: 35px solid transparent;
     border-right: 26px solid transparent;
 }
-.body .right-collar{
+
+.body .right-collar {
     position: absolute;
     right: calc(50% - 100px);
     width: 0;
@@ -493,7 +535,8 @@ body{
     border-left: 30px solid transparent;
     border-right: 40px solid transparent;
 }
-.body .right-collar::after{
+
+.body .right-collar::after {
     display: block;
     content: '';
     position: absolute;
@@ -510,12 +553,12 @@ body{
  *  最后，让我们的海绵宝宝动起来！
  */
 
-@keyframes blink {
-    0%, 2%, 60%, 62%, 100% {
+@keyframes blink  {
+    0%, 2%, 60%, 62%, 100%  {
         -webkit-transform: scaleX(1) scaleY(1);
         transform: scaleX(1) scaleY(1);
     }
-    1%, 61% {
+    1%, 61%  {
         -webkit-transform: scaleX(1.5) scaleY(0.1);
         transform: scaleX(1.5) scaleY(0.1);
     }
@@ -525,16 +568,14 @@ body{
  *  眨眨眼睛！
  */
 
-.upper-face > *{
+.upper-face > * {
     animation: blink forwards infinite 6s ease-in-out;
 }
 
 /*
+ *
  *  画完啦！
  *
- *  怎么样？
- *
- *  这只可爱的海绵宝宝有没有让你嘴角上扬呢？
  */
  `;
 }();
